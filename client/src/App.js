@@ -7,8 +7,10 @@ import Launch from "./components/Launch";
 import "./App.css";
 import logo from "./spacex_logo.png";
 
+// to deploy, change client uri to "/graphql",
+// to run on local, add "proxy" in client "package.json"
 const client = new ApolloClient({
-  uri: "http://localhost:5000/graphql",
+  uri: "/graphql",
 });
 
 function App() {
